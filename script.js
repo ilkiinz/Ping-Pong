@@ -22,7 +22,7 @@ function drawPaddle() {
 
 function drawBall() {
     ctx.beginPath();
-    ctx.arc(ballX, ballY, ballRadius, 0, Math.PI * 2);
+    ctx.arc(ballX, ballY, ballRadius, 2, Math.PI * 5);
     ctx.fillStyle = "#0095DD";
     ctx.fill();
     ctx.closePath();
