@@ -1,5 +1,6 @@
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
+const gameOver = document.querySelector("h1");
 
 const paddleWidth = 120;
 const paddleHeight = 10;
@@ -48,7 +49,7 @@ function draw() {
             ballSpeedY = -ballSpeedY;
         } else {
             // Game over
-            alert("Game Over");
+            gameOver.style.display = "block";
             document.location.reload();
         }
     }
